@@ -14,10 +14,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       database: 'service_template_db',
       entities: [__dirname + '/**/*.entity.{js,ts}'],
       synchronize: true,
-    }),  
+    }),
   ],
   controllers: [AppController],
-  providers: [AppService]
+  providers: [AppService],
 })
-
 export class AppModule {}
