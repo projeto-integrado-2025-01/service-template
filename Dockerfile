@@ -1,8 +1,9 @@
-FROM node:22.15
+FROM node:20.19.2
 
 WORKDIR /app
 
 COPY package*.json ./
+RUN npm install -g @nestjs/cli
 RUN npm install
 
 COPY . .
